@@ -22,6 +22,7 @@ const App = () => {
   }
 
   const [theme, setTheme] = useState(localStorage.getItem("themeMode"));
+
   const {
     projects,
     certifications,
