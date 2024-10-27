@@ -62,7 +62,7 @@ const App = () => {
         <footer class="footer bg-link fade-in text-center text-white" id="">
           <div className="container p-1"></div>
           <div class="text-center">
-            <p>Handcrafted by Ștefan Juca &copy; 2023</p>
+            <p>Handcrafted by Ștefan Juca &copy; 2024</p>
           </div>
         </footer>
       </main>
