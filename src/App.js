@@ -1,19 +1,14 @@
-import React, { createContext, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Navigate,
-  Routes,
-} from "react-router-dom";
-import About from "./pages/About/About";
-import Home from "./pages/Home/Home";
-import Work from "./pages/Work/Work";
-import Contact from "./pages/Contact/Contact";
-import Skills from "./pages/Skills/Skills";
-import Certifications from "./pages/Certifications/Certifications";
+import React, { useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import useFirebase from "../src/hooks/use-firebase";
 import "./App.css";
 import Header from "./components/js/Header";
-import useFirebase from "../src/hooks/use-firebase";
+import About from "./pages/About/About";
+import Certifications from "./pages/Certifications/Certifications";
+import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home/Home";
+import Skills from "./pages/Skills/Skills";
+import Work from "./pages/Work/Work";
 
 const App = () => {
   let themeMode = localStorage.getItem("themeMode");
@@ -39,6 +34,7 @@ const App = () => {
   };
 
   localStorage.setItem("themeMode", theme);
+  themeMode = localStorage.getItem("themeMode");
 
   return (
     <Router>
