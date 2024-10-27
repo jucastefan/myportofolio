@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #828282;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html {
+  min-height: auto;
+}
+
+.App {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+#light {
+  background-image: linear-gradient(
+    to bottom,
+    #9149f0,
+    #5474ff,
+    #0091ff,
+    #00a8ff,
+    #00bbf9,
+    #00c3f0,
+    #20cae4,
+    #48d0d7,
+    #45d1c9,
+    #4dd1b8,
+    #5dd1a6,
+    #70cf92
+  );
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+#dark {
+  background-image: linear-gradient(
+    to top,
+    #3b0d0d,
+    #3c0c1a,
+    #3a0f26,
+    #351430,
+    #2b1a39,
+    #241b38,
+    #1e1c36,
+    #181c34,
+    #17192a,
+    #151521,
+    #121118,
+    #0d0d0d
+  );
+
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+}

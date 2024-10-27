@@ -1,0 +1,8 @@
+.article {
+  height: 17rem;
+  text-align: justify;
+}
+
+.article-card {
+  max-width: 55rem;
+}
